@@ -1,17 +1,5 @@
-*.class
-
-# Package Files #
-*.dex
-*.war
-*.ear
-*.apk
+.classpath
+.project
+.gen/
 bin/
-bin
-gen/
-release/
-release
-gen
-.metadata/
-.metadata
-*.project
-library/target/
+target/
