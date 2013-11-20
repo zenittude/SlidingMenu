@@ -28,11 +28,13 @@
 			<artifactId>maps</artifactId>
 			<version>17_r1</version>
 		</dependency>
-		<dependency>
-			<groupId>com.google.android</groupId>
-			<artifactId>support-v4</artifactId>
-			<version>r12</version>
-		</dependency>
+        <dependency>
+            <!-- Support library (aka compatibility library) from the central repository
+                as well note that this uses default scope (NOT provided) since the library
+                will need to be added to your apk -->
+            <groupId>android.support</groupId>
+            <artifactId>compatibility-v4</artifactId>
+        </dependency>
 	</dependencies>
 
 	<build>
