@@ -4,7 +4,7 @@
 
 	<groupId>com.slidingmenu</groupId>
 	<artifactId>slidingmenu</artifactId>
-    <version>0.0.10</version>
+    <version>0.0.11-SNAPSHOT</version>
 	<name>SlidingMenu</name>
 	<packaging>apklib</packaging>
 
@@ -23,7 +23,7 @@
 		<url>https://github.com/zenittude/SlidingMenu/tree/${scm.branch}</url>
 		<connection>scm:git:ssh://git@github.com/zenittude/SlidingMenu.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/zenittude/SlidingMenu.git</developerConnection>
-		<tag>slidingmenu-0.0.10</tag>
+		<tag>slidingmenu-0.0.9</tag>
     </scm>
 
 	<dependencies>
