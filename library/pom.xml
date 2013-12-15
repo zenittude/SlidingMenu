@@ -21,8 +21,8 @@
 
 	<scm>
 		<url>https://github.com/zenittude/SlidingMenu/tree/${scm.branch}</url>
-		<connection>scm:git:https://github.com/zenittude/SlidingMenu.git</connection>
-		<developerConnection>scm:git:https://github.com/zenittude/SlidingMenu.git</developerConnection>
+		<connection>scm:git:ssh://git@github.com/zenittude/SlidingMenu.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/zenittude/SlidingMenu.git</developerConnection>
 		<tag>slidingmenu-0.0.9</tag>
     </scm>
 
