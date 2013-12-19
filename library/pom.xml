@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<groupId>com.slidingmenu</groupId>
 	<artifactId>slidingmenu</artifactId>
-	<version>1.2</version>
+    <version>0.0.11-SNAPSHOT</version>
 	<name>SlidingMenu</name>
 	<packaging>apklib</packaging>
 
 	<parent>
 		<groupId>com.zenittude</groupId>
 		<artifactId>zenittude-android-parent</artifactId>
-		<version>0.0.1</version>
+		<version>0.0.11-SNAPSHOT</version>
         <relativePath>../../../pom.xml</relativePath>
 	</parent>
 
+	<properties>
+		<scm.branch>master</scm.branch>
+	</properties>
+
+	<scm>
+		<url>https://github.com/zenittude/SlidingMenu/tree/${scm.branch}</url>
+		<connection>scm:git:ssh://git@github.com/zenittude/SlidingMenu.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/zenittude/SlidingMenu.git</developerConnection>
+		<tag>slidingmenu-0.0.9</tag>
+    </scm>
+
 	<dependencies>
 		<dependency>
-			<groupId>com.google.android</groupId>
+			<groupId>android</groupId>
 			<artifactId>android</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.google.android.maps</groupId>
 			<artifactId>maps</artifactId>
-			<version>17_r1</version>
 		</dependency>
         <dependency>
             <!-- Support library (aka compatibility library) from the central repository
@@ -53,28 +59,6 @@
 					<undeployBeforeDeploy>true</undeployBeforeDeploy>
 				</configuration>
 			</plugin>
-
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
-                <version>1.7</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>attach-artifact</goal>
-                        </goals>
-                        <configuration>
-                            <artifacts>
-                                <artifact>
-                                    <type>jar</type>
-                                    <file>${project.build.directory}/${project.build.finalName}.jar</file>
-                                </artifact>
-                            </artifacts>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
 		</plugins>
 	</build>
 </project>
